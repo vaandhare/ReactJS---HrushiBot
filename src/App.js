@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import Menu from './Menu/Menu';
-import Doctor from './Doctor/Doctor';
 import SideDrawer from '../src/SideDrawer/SideDrawer';
 import BackDrop from '../src/BackDrop/BackDrop';
-
+import Doctor from './Doctor/Doctor';
+import chatbot from '../src/Chatbot/Chatbot';
+import Chatbot from '../src/Chatbot/Chatbot';
 
 class App extends Component {
 
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
+    popup: false
   };
 
   drawerMenuClickHandler = () => {
@@ -30,11 +32,13 @@ class App extends Component {
     }
 
     return (
-      <div style={{height: '100%' }}>
-        <Menu drawerClickHandler={this.drawerMenuClickHandler}/>
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backDrop}
-      </div>
+
+        <div style={{height: '100%' }}>
+          {/* <Menu drawerClickHandler={this.drawerMenuClickHandler}/>
+          <SideDrawer show={this.state.sideDrawerOpen} />
+          {backDrop} */}
+          <Chatbot />
+        </div>
     );
   }
 }

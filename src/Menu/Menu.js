@@ -15,7 +15,7 @@ const Menu = props => (
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Patient</a></li>
-                    <li><a href="">Doctor</a></li>
+                    <li><a href="/Doctor.js">Doctor</a></li>
                 </ul>
             </div>
         </nav>

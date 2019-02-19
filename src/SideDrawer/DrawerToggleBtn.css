@@ -1,0 +1,20 @@
+.menu_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 28px;
+    width: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu_btn:focus{
+    outline: none;
+}
+
+.menu_btn_line{
+    width: 25px;
+    height: 2px;
+    background: white;
+}
